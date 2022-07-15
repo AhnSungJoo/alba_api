@@ -6,10 +6,6 @@ import * as settingConfig from 'config';
 // import * as emoji from 'telegram-emoji-map';
 
 import logger from '../util/logger';
-import {sendInternalMSG, sendInternalErrorMSG} from '../module/internalMSG';
-import {sendExternalMSG} from '../module/externalMSG';
-import {sendErrorMSG} from '../module/errorMSG';
-
 import {upsertData} from '../module/insertDB';
 import {getPaging} from '../util/paging';
 
@@ -25,7 +21,6 @@ import kookminDAO from '../dao/kookminAlarmDAO';
 import {ipAllowedCheck} from '../module/condition';
 
 const db_modules = [upsertData]
-const msg_modules = [sendExternalMSG]  // 텔레그램 알림 모음 (내부 / 외부)
 const router: Router = new Router();
 
 /*
