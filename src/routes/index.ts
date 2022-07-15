@@ -10,11 +10,6 @@ import overviewRouter from './overview';
 import functionRouter from './function';
 import alarmRouter from './alarm';
 import albaRouter from './alba';
-
-import {sendInternalMSG, sendInternalErrorMSG} from '../module/internalMSG';
-import {sendExternalMSG} from '../module/externalMSG';
-import {sendErrorMSG} from '../module/errorMSG';
-
 import {upsertData} from '../module/insertDB';
 import {getPaging} from '../util/paging';
 
@@ -28,7 +23,6 @@ import nameDAO from '../dao/nameDAO';
 import { start } from 'repl';
 
 const db_modules = [upsertData]
-const msg_modules = [sendExternalMSG]  // 텔레그램 알림 모음 (내부 / 외부)
 const router: Router = new Router();
 
 let complainPoint = 500;

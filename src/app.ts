@@ -9,7 +9,6 @@ import * as path from 'path';
 import * as http from 'http';
 import * as https from 'https';
 import * as EventEmitter from 'events';
-import * as telegram from './util/TelegramUtil'
 
 import * as Koa from 'koa';
 import * as koaBody from 'koa-body';
