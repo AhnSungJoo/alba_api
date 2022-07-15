@@ -1,5 +1,5 @@
 {
-  "name": "web",
+  "name": "alba_blind",
   "version": "1.0.0",
   "description": "Simple web application based on Koa",
   "main": "app.js",
