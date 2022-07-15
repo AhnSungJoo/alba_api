@@ -6,10 +6,6 @@ import * as settingConfig from 'config';
 // import * as emoji from 'telegram-emoji-map';
 
 import logger from '../util/logger';
-import {sendInternalMSG, sendInternalErrorMSG} from '../module/internalMSG';
-import {sendExternalMSG} from '../module/externalMSG';
-import {sendErrorMSG} from '../module/errorMSG';
-
 import {upsertData} from '../module/insertDB';
 import {getPaging} from '../util/paging';
 
