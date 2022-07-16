@@ -43,9 +43,9 @@ router.post('/albaregister', async (ctx, next) => {
   const company_name = ctx.request.body.company_name; // 회사이름
   const review = ctx.request.body.review; // 후기
 
-  const alDAO = new albaDAO();
-  await alDAO.updateAlbaCompany(email, company_name);
-  await alDAO.updateAlbaReview(email, review);
+  // const alDAO = new albaDAO();
+  // await alDAO.updateAlbaCompany(email, company_name);
+  // await alDAO.updateAlbaReview(email, review);
 
   return ctx.redirect('/'); 
 });
