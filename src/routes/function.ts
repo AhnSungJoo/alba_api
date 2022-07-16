@@ -37,6 +37,15 @@ router.get('/sendmsg', async (ctx, next) => {
   return ctx.render('sendmsg', {forum});
 })
  // 특정 고객 포인트 변경(불편사항 퀄리티에 따라 변경)
+ router.post('/albaregister', async (ctx, next) => { 
+  const email = ctx.request.body.emailValue; // 이메일 
+  const company_name = ctx.request.body.company_name; // 회사이름
+  const review = ctx.request.body.review; // 후기
+  const alDAO = new albaDAO();
+  await alDAO.updateAlbaCompany(email, company_name);
+  await alDAO.updateAlbaReview(email, review);
 
+  return ctx.render('index');  
+});
 
 export default router;
