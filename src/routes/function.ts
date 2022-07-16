@@ -41,6 +41,7 @@ router.get('/sendmsg', async (ctx, next) => {
   const email = ctx.request.body.emailValue; // 이메일 
   const company_name = ctx.request.body.company_name; // 회사이름
   const review = ctx.request.body.review; // 후기
+  
   const alDAO = new albaDAO();
   await alDAO.updateAlbaCompany(email, company_name);
   await alDAO.updateAlbaReview(email, review);
