@@ -16,7 +16,6 @@ class DBPool {
       const dbs: any = config.get('db');
       Object.keys(dbs).forEach((key: string) => {
         const dbInfo: any = dbs[key];
-        /*
         this.pool[key] = mysql.createPool({
           connectionLimit: 1000,
           host: "54.173.235.97",
@@ -24,13 +23,14 @@ class DBPool {
           password: "#potensj11",
           database: "complainer"
         });
-        */
+        /*
        this.pool[key] = mysql.createPool({
         connectionLimit: 1000,
         host: "127.0.0.1",
         user: "root",
         password: "potensj11",
         database: "complainer"
+                */
       });
 
       })
