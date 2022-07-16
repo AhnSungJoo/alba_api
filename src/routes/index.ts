@@ -45,7 +45,7 @@ router.post('/albaregister', async (ctx, next) => {
   // await alDAO.updateAlbaCompany(email, company_name);
   // await alDAO.updateAlbaReview(email, review);
 
-  return ctx.redirect('/');  
+  return ctx.render('index');  
 });
 
 router.use('/function', functionRouter.routes());
