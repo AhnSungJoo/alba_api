@@ -36,4 +36,16 @@ router.get('/ping', async (ctx, next) => {
   return ctx.body = "OK";
 })
 
+// 특정 고객 포인트 변경(불편사항 퀄리티에 따라 변경)
+router.post('/albaregister', async (ctx, next) => { 
+  console.log('alba here'); 
+  const email = ctx.request.body.emailValue; // 이메일 
+  const company_name = ctx.request.body.company_name; // 회사이름
+  const review = ctx.request.body.review; // 후기
+  console.log('email : ' + email);
+  console.log('body' + JSON.stringify(ctx.request));
+  return ctx.render('index');
+});
+
+router.use('/function', functionRouter.routes());
 export default router;

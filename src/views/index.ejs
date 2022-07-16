@@ -1,42 +1,196 @@
-<% include header %>
-<script>
-</script>
-<!-- Begin Page Content -->
-  <div class="container-fluid">
-
-    <!-- Page Heading --> 
-    <h1></h1>
-    <h1 class="h3 mb-2 text-gray-800">Dashboard</h1>
-    <p class="mb-4">이곳은 프로불편러 관리자 페이지입니다.</p>
-
-    <!-- DataTales Example -->
-    <div class="card shadow mb-4">
-      <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary"></h6>
-      </div>      
-    </div>
-  </div>
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <link rel="icon" href="/resource/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/resource/img/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="알바 리뷰를 남겨보세요!">
+    <meta name="description" content="">
+    <title>알바계의블라인드</title>
+    <link rel="stylesheet" href="/resource/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="/resource/css/Home.css" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script class="u-script" type="text/javascript" src="/resource/css/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 4.14.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{ 
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/KakaoTalk_Photo_2022-07-03-08-09-22.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-a917"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="640" data-image-height="640">
+          <img src="/resource/img/alba_logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+      </div></header>
+    <section class="u-align-center u-clearfix u-grey-10 u-section-1" id="carousel_633c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-container-style u-group u-radius-50 u-shape-round u-white u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-align-center u-text u-text-1">알바 리뷰를 남겨보세요!</h2>
+            <img class="u-image u-image-default u-preserve-proportions u-image-1" src="/resource/img/alba_logo.png" alt="" data-image-width="640" data-image-height="640">
+            <p class="u-align-center u-text u-text-2">알바 리뷰를 남기고 다른 사람의 리뷰도 확인하세요</p>
+            <a href="#sec-9c56" class="u-active-palette-2-light-1 u-border-none u-btn u-btn-round u-button-style u-dialog-link u-hover-palette-2-light-1 u-palette-2-base u-radius-50 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-1">리뷰 남기기</a>
+            <a href="https://www.google.com/maps/d/edit?hl=ko&mid=10xEe0zlcFWFBPrTPdMsR4yzrFEHnNEM&ll=37.27429398043654%2C127.31383296835608&z=9" target="_blank" class="u-active-palette-2-light-1 u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-1 u-palette-2-base u-radius-50 u-text-active-white u-text-body-alt-color u-text-hover-white u-btn-2">리뷰 확인하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-dialog-section-5" id="sec-9c56">
+        <div class="u-align-left u-border-1 u-border-white u-container-style u-dialog u-radius-5 u-shape-round u-white u-dialog-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h2 class="u-text u-text-default u-text-1">리뷰를 남겨주세요.</h2>
+            <div class="u-form u-form-1">
+                <form action="/function/albaregister" method="POST"  class="u-form-spacing-19" style="padding: 0px;" source="email" name="form">
+                  <div class="u-form-group u-form-name u-form-group-1" style="padding-bottom: 30px;">
+                      <label for="name-3e72" class="u-form-control-hidden u-label">Name</label>
+                      <input type="email" placeholder="본인의 이메일을 입력해주세요." id="emailValue" name="emailValue" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius-5" required="">
+                  </div>
+                  <div class="u-form-email u-form-group u-form-group-2" style="padding-bottom: 30px;">
+                      <label for="email-3e72" class="u-form-control-hidden u-label">Email</label>
+                      <input type="text" placeholder="일하셨던 곳을 입력해주세요. ex) GS편의점 역삼점" id="company_name" name="company_name" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius-5" required="">
+                  </div>
+                  <div class="u-form-group u-form-message u-form-group-3" style="padding-bottom: 30px;">
+                    <label for="message-3e72" class="u-form-control-hidden u-label">Message</label>
+                    <textarea placeholder="리뷰를 남겨주세요." rows="4" cols="50" id="review" name="review" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius-5" required=""></textarea>
+                  </div>
+                  <div class="u-align-right u-form-group u-form-submit u-form-group-4">
+                      <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-2-base u-radius-5 u-btn-1">등록하기<br>
+                      </a>
+                      <input type="submit" value="submit" class="u-form-control-hidden">
+                  </div>
+                  <div class="u-form-send-message u-form-send-success"> 리뷰가 정상적으로 등록되었습니다. 감사홥니다! </div>
+                  <div class="u-form-send-error u-form-send-message"> 리뷰 등록 중 오류가 발생했습니다. 다시 시도 해주세요. </div>
+                  <input type="hidden" value="" name="recaptchaResponse">
+                </form>
+            </div>
+          </div><button class="u-dialog-close-button u-icon u-text-grey-50 u-icon-1">
+          <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1ce9"></use></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-1ce9"><path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path></svg>
+        </button>
+        </div>
+      </section>
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f77b"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">알바리뷰를 남겨보세요.</p>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>알바계의블라인드</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Complainer</span>
+      </a> 
+    </section>
+   
+      <style> 
+      .u-dialog-section-5 {
+    min-height: 826px;
+  }
   
-      <!-- End of Main Content -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Bootstrap core JavaScript-->
-  <script src="/resource/vendor/jquery/jquery.min.js"></script>
-  <script src="/resource/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="/resource/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="/resource/js/sb-admin-2.min.js"></script>
-
-  <!-- Page level plugins -->
-  <script src="/vendor/chart.js/Chart.min.js"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="/resource/js/demo/chart-area-demo.js"></script>
-  <script src="/resource/js/demo/chart-pie-demo.js"></script>
+  .u-dialog-section-5 .u-dialog-1 {
+    width: 683px;
+    min-height: 515px;
+    margin: 200px auto 60px;
+  }
+  
+  .u-dialog-section-5 .u-container-layout-1 {
+    padding: 40px;
+  }
+  
+  .u-dialog-section-5 .u-text-1 {
+    font-size: 2.25rem;
+    margin: 12px auto 0 0;
+  }
+  
+  .u-dialog-section-5 .u-form-1 {
+    height: 326px;
+    width: 601px;
+    margin: 23px 0 0;
+  }
+  
+  .u-dialog-section-5 .u-form-group-1 {
+    width: 100%;
+  }
+  
+  .u-dialog-section-5 .u-form-group-2 {
+    width: 100%;
+  }
+  
+  .u-dialog-section-5 .u-form-group-3 {
+    width: 100%;
+  }
+  
+  .u-dialog-section-5 .u-form-group-4 {
+    width: 100%;
+  }
+  
+  .u-dialog-section-5 .u-btn-1 {
+    background-image: none;
+    border-style: none;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .u-dialog-section-5 .u-icon-1 {
+    width: 15px;
+    height: 15px;
+    left: auto;
+    top: 16px;
+    position: absolute;
+    right: 18px;
+  }
+  
+  @media (max-width: 1199px) {
+     .u-dialog-section-5 {
+      min-height: 906px;
+    }
+  
+    .u-dialog-section-5 .u-dialog-1 {
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .u-dialog-section-5 .u-container-layout-1 {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 540px;
+    }
+  
+    .u-dialog-section-5 .u-form-1 {
+      width: 520px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .u-dialog-section-5 .u-dialog-1 {
+      width: 340px;
+    }
+  
+    .u-dialog-section-5 .u-container-layout-1 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .u-dialog-section-5 .u-form-1 {
+      width: 320px;
+    }
+  }
+</style>
+</body>
+</html>
