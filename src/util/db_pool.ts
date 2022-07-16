@@ -30,9 +30,9 @@ class DBPool {
         user: "root",
         password: "potensj11",
         database: "complainer"
-                */
-      });
 
+      });
+                */
       })
 
       DBPool.instance = this;
